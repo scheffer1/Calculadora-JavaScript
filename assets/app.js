@@ -56,7 +56,7 @@ function percent(){
 
 function equals(){
     if(inputNotNull()){
-        input.value = eval(temp + operator + input.value);
+        input.value = Math.round(eval(temp + operator + input.value)*100)/100
         temp = 0;
         operator = "";
     }
